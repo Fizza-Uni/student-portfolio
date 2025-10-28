@@ -7,7 +7,7 @@
    Basic reset & variables
    --------------------------- */
 :root{
-  --bg: #0f1724;
+  --bg: #5b0775;
   --card: #0b1220;
   --muted: #9aa7b2;
   --accent: #6cc1ff;
@@ -155,7 +155,7 @@ body{
   gap:var(--gap);
 }
 .team-card{
-  background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  background:linear-gradient(180deg, rgba(183, 74, 164, 0.015), rgba(77, 14, 68, 0.01));
   border-radius:12px;
   padding:1rem;
   text-align:center;
@@ -176,7 +176,7 @@ body{
 .site-footer{
   position:relative;
   left:0;right:0;bottom:0;
-  background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.55));
+  background:linear-gradient(180deg, rgba(191, 57, 203, 0.45), rgba(112, 8, 83, 0.55));
   border-top:1px solid rgba(255,255,255,0.02);
   padding:.6rem 0;
 }
