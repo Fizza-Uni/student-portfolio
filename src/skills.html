@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills — Showcase Hub</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">SH</span>
+          <span class="logo-text">Showcase Hub</span>
+        </a>
+        <p class="group-name">Team: <strong>Group Alpha</strong></p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="sr-only">Toggle navigation</span> ☰
+        </button>
+
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Skills & Proficiency</h1>
+      <p class="lead">Technical and soft skills developed through coursework, internships, and personal projects.</p>
+    </section>
+
+    <section class="about-team" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+
+      <div class="team-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <article class="team-card" style="text-align:left;">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 — <strong>Advanced</strong></li>
+            <li>CSS3 (Flexbox, Grid) — <strong>Advanced</strong></li>
+            <li>JavaScript (ES6+) — <strong>Intermediate</strong></li>
+            <li>React / React Native — <strong>Intermediate</strong></li>
+          </ul>
+        </article>
+
+        <article class="team-card" style="text-align:left;">
+          <h3>Backend & Databases</h3>
+          <ul>
+            <li>Node.js / Express — <strong>Intermediate</strong></li>
+            <li>REST APIs — <strong>Intermediate</strong></li>
+            <li>PostgreSQL / MongoDB — <strong>Intermediate</strong></li>
+            <li>Authentication (JWT) — <strong>Basic → Intermediate</strong></li>
+          </ul>
+        </article>
+
+        <article class="team-card" style="text-align:left;">
+          <h3>DevOps & Tools</h3>
+          <ul>
+            <li>Git & GitHub — <strong>Advanced</strong></li>
+            <li>CI/CD basics — <strong>Basic</strong></li>
+            <li>Docker (basic) — <strong>Basic</strong></li>
+            <li>Linux commands — <strong>Intermediate</strong></li>
+          </ul>
+        </article>
+
+        <article class="team-card" style="text-align:left;">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Team collaboration & Git workflow — <strong>Advanced</strong></li>
+            <li>Problem solving — <strong>Advanced</strong></li>
+            <li>Communication & presentations — <strong>Intermediate</strong></li>
+            <li>Time management — <strong>Intermediate</strong></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <h2>How we measured proficiency</h2>
+      <p class="about-desc">Proficiency labels are subjective — based on course work, project experience, and internship tasks. Each team member added their own skills to their page.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Showcase Hub — Built by Group Alpha</p>
+      <p class="small">Repository: <a href="https://github.com/Fizza-Uni/student-portfolio" target="_blank" rel="noopener">github.com/Fizza-Uni/student-portfolio</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const navList = document.getElementById('nav-list');
+      toggle && toggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        navList.classList.toggle('open');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
